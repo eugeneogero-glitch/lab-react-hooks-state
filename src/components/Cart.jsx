@@ -1,16 +1,16 @@
 import React from "react";
 
-function Cart({ cart }) {
+const Cart = ({ cart }) => {
   return (
-    <div className="cart-section">
+    <div className="cart">
       <h2>Shopping Cart</h2>
       <ul>
         {cart.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>{item.name} is in your cart</li>
         ))}
       </ul>
     </div>
   );
-}
+};
 
 export default Cart;
